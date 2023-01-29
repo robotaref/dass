@@ -1,0 +1,30 @@
+apiVersion: v1
+data:
+  config.yaml:
+    enablePasswordDB: true
+    issuer: http://dex.auth.svc.cluster.local:5556/dex
+    logger:
+      format: text
+      level: debug
+    oauth2:
+      skipApprovalScreen: true
+    staticClients:
+    - idEnv: OIDC_CLIENT_ID
+      name: Dex Login Application
+      redirectURIs:
+      - /login/oidc
+      secretEnv: OIDC_CLIENT_SECRET
+    staticPasswords:
+    - email: aref.ghodamai@gmail.com
+      hash: $2y$12$JboMySbx3LuPgRxyCiLT2.Kq4nTptOwDveqjk8F376X8qbP1Hbf9i
+      userID: '15841185641784'
+      username: aref
+    storage:
+      config:
+        inCluster: true
+      type: kubernetes
+    web:
+      http: 0.0.0.0:5556
+kind: ConfigMap
+metadata:
+  name: dex

@@ -1,0 +1,37 @@
+name: Build & Apply KServe manifests in KinD
+on:
+  pull_request:
+    paths:
+      - contrib/kserve/**
+      - common/knative/**
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Install KinD
+      run: ./tests/gh-actions/install_kind.sh
+
+    - name: Create KinD Cluster
+      run: kind create cluster --config tests/gh-actions/kind-cluster.yaml
+
+    - name: Install kustomize
+      run: ./tests/gh-actions/install_kustomize.sh
+
+    - name: Install Istio
+      run: ./tests/gh-actions/install_istio.sh
+
+    - name: Install cert-manager
+      run: ./tests/gh-actions/install_cert_manager.sh
+
+    - name: Build & Apply manifests
+      run: ./tests/gh-actions/install_kserve.sh
+
+    - name: Create kserve experiment
+      run: |
+        ./tests/gh-actions/install_knative.sh
+        kubectl apply -f tests/gh-actions/kf-objects/kserve_test.yaml
+        kubectl wait --for=condition=ready inferenceservices.serving.kserve.io --all-namespaces --all --timeout 300s
