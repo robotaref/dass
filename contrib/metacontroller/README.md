@@ -37,4 +37,4 @@ make delete
 
 ## Upgrade Metacontroller
 
-To upgrade to the lates version used in Kubeflow, follow the steps in [UPGRADE.md](UPDGRADE.md).
+To upgrade to the lates version used in Kubeflow, follow the steps in [UPGRADE.md](./UPDGRADE.md).

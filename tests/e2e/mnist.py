@@ -40,7 +40,7 @@ def mnist_pipeline(name=settings.PIPELINE_NAME,
 
     # Create the KServe Inference
     kserve.create_serving_task(name, namespace, tfjob_op,
-                               model_volume_op)
+                                    model_volume_op)
 
 
 if __name__ == "__main__":
