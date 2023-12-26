@@ -17,7 +17,7 @@ port-forward:
 	$(info Use this link to conenct: "http://localhost:8080")
 
 create-user:
-	python3 ./common/dex/generate_password.py
+	./create_user.sh
 
 install-istio-system:
 	kustomize build common/istio-1-16/istio-crds/base | kubectl apply -f -
