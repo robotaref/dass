@@ -20,17 +20,7 @@ data:
     staticPasswords:
     - email: slfhumble@gmail.com
       hash: $2y$12$alXat7rrov4FYDmYSU3jauXt56JQnD7ND.ax2Arbbo44E8.5TQf3i
-    - email: aref6@gmail.com
-      hash: $2y$12$Vc4no9hGbkJaMf67IAsbhuIUrS8P.x3/QnI2boKHH7YqfVYybkRVy
-    - email: aref3@gmail.com
-      hash: $2y$12$5n78L9lXHUQ67ihUuoE9pe5DSNBs2bRQJfCeg4WuPbReny45r5KjC
-    - email: aref2@gmail.com
-      hash: $2y$12$dsAdNtiMZjdRxzQjozVic.fMuE4qfbYjlLC567gO4n4lnZAIMIKwy
     - email: user@example.com
-      hash: $2y$12$4K/VkmDd1q1Orb3xAt82zu8gk7Ad6ReFR4LCP9UeYE90NLiN9Df72
-    - email: aref@gmail.com
-      hash: $2y$12$4K/VkmDd1q1Orb3xAt82zu8gk7Ad6ReFR4LCP9UeYE90NLiN9Df72
-    - email: aref1@gmail.com
       hash: $2y$12$4K/VkmDd1q1Orb3xAt82zu8gk7Ad6ReFR4LCP9UeYE90NLiN9Df72
     staticClients:
     # https://github.com/dexidp/dex/pull/1664

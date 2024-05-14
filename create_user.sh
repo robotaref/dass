@@ -8,6 +8,7 @@ source_yaml="profiles/boiler_plate.yaml"
 output_yaml="profiles/$PROFILE_NAME.yaml"
 configmap_yaml="common/dex/base/config-map.yaml"
 hash=$(python3 -c 'from passlib.hash import bcrypt; import getpass; print(bcrypt.using(rounds=12, ident="2y").hash(getpass.getpass()))')
+regex='[a-z0-9]([-a-z0-9]*[a-z0-9])?(\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*'
 
 # Ensure the configmap.yaml file exists
 if [ ! -f "$configmap_yaml" ]; then
