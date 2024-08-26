@@ -100,17 +100,17 @@ health-check:
 	kubectl get pods -n kubeflow-user-example-com
 
 install-all:
-	make install-istio-system
-	make install-cert-manager
-	make install-istio
-	make install-dex
-	make install-oidc-auth-service
-	make install-knative
-	make install-kubeflow-namespace
-	make install-kubeflow-roles
-	make install-kubeflow-istio-resources
-	make install-kubeflow-pipelines
-	make install-kserve
+#	make install-istio-system
+#	make install-cert-manager
+#	make install-istio
+#	make install-dex
+#	make install-oidc-auth-service
+#	make install-knative
+#	make install-kubeflow-namespace
+#	make install-kubeflow-roles
+#	make install-kubeflow-istio-resources
+#	make install-kubeflow-pipelines
+#	make install-kserve
 	make install-katib
 	make install-central-dashboard
 	make install-admission-webhook

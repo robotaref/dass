@@ -86,7 +86,7 @@ spawnerFormDefaults:
             requests:
               storage: 10Gi
           accessModes:
-          - ReadWriteOnce
+          - ReadWriteMany
     readOnly: false
   dataVolumes:
     # List of additional Data Volumes to be attached to the user's Notebook

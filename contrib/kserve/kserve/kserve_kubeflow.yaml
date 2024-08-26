@@ -19843,8 +19843,8 @@ data:
            "gcsCredentialFileName": "gcloud-application-credentials.json"
        },
        "s3": {
-           "s3AccessKeyIDName": "minio",
-           "s3SecretAccessKeyName": "minio123",
+           "s3AccessKeyIDName": "accesskey",
+           "s3SecretAccessKeyName": "secretkey",
            "s3Endpoint": "minio-service:9000",
            "s3UseHttps": "false",
            "s3Region": "",
@@ -20038,7 +20038,7 @@ spec:
             - name: SECRET_NAME
               value: kserve-webhook-server-cert
           image: kserve/kserve-controller:v0.10.0
-          imagePullPolicy: Always
+          imagePullPolicy: IfNotPresent
           name: manager
           ports:
             - containerPort: 9443
