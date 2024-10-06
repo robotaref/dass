@@ -5387,9 +5387,9 @@ spec:
           - --dynamic-serving-dns-names=cert-manager-webhook.$(POD_NAMESPACE).svc
           
           ports:
-          - name: https
-            protocol: TCP
-            containerPort: 10250
+#          - name: https
+#            protocol: TCP
+#            containerPort: 10250
           - name: healthcheck
             protocol: TCP
             containerPort: 6080
