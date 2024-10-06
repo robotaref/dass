@@ -1,0 +1,15 @@
+allowVolumeExpansion: true
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"allowVolumeExpansion":true,"apiVersion":"storage.k8s.io/v1","kind":"StorageClass","metadata":{"annotations":{"storageclass.kubernetes.io/is-default-class":"true"},"name":"local-storage"},"provisioner":"kubernetes.io/local","reclaimPolicy":"Retain","volumeBindingMode":"Immediate"}
+    storageclass.kubernetes.io/is-default-class: "true"
+  creationTimestamp: "2024-06-27T06:34:39Z"
+  name: local-storage
+  resourceVersion: "21807033"
+  uid: 4579a6dc-28b3-4314-8b95-4815bbed828e
+provisioner: kubernetes.io/local
+reclaimPolicy: Retain
+volumeBindingMode: Immediate
