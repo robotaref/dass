@@ -53,4 +53,119 @@ spec:
   persistentVolumeReclaimPolicy: Retain
   storageClassName: local-storage
   volumeMode: Filesystem
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"PersistentVolume","metadata":{"annotations":{},"labels":{"type":"local"},"name":"pv-7"},"spec":{"accessModes":["ReadWriteOnce"],"capacity":{"storage":"20Gi"},"hostPath":{"path":"/data/7/","type":"DirectoryOrCreate"},"nodeAffinity":{"required":{"nodeSelectorTerms":[{"matchExpressions":[{"key":"kubernetes.io/hostname","operator":"In","values":["worker-a"]}]}]}},"storageClassName":"local-storage","volumeMode":"Filesystem"}}
+    pv.kubernetes.io/bound-by-controller: "yes"
+  creationTimestamp: "2024-06-27T06:40:17Z"
+  finalizers:
+  - kubernetes.io/pv-protection
+  labels:
+    type: local
+  name: pv-2
+  resourceVersion: "21810236"
+  uid: 2cf6e49e-aeda-4fde-859f-e5b151c1d97e
+spec:
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: 20Gi
+  hostPath:
+    path: /data/2/
+    type: DirectoryOrCreate
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: local-storage
+  volumeMode: Filesystem
+
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"PersistentVolume","metadata":{"annotations":{},"labels":{"type":"local"},"name":"pv-7"},"spec":{"accessModes":["ReadWriteOnce"],"capacity":{"storage":"20Gi"},"hostPath":{"path":"/data/7/","type":"DirectoryOrCreate"},"nodeAffinity":{"required":{"nodeSelectorTerms":[{"matchExpressions":[{"key":"kubernetes.io/hostname","operator":"In","values":["worker-a"]}]}]}},"storageClassName":"local-storage","volumeMode":"Filesystem"}}
+    pv.kubernetes.io/bound-by-controller: "yes"
+  creationTimestamp: "2024-06-27T06:40:17Z"
+  finalizers:
+  - kubernetes.io/pv-protection
+  labels:
+    type: local
+  name: pv-3
+  resourceVersion: "21810236"
+  uid: 2cf6e49e-aeda-4fde-859f-e5b151c1d97e
+spec:
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: 20Gi
+  hostPath:
+    path: /data/3/
+    type: DirectoryOrCreate
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: local-storage
+  volumeMode: Filesystem
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"PersistentVolume","metadata":{"annotations":{},"labels":{"type":"local"},"name":"pv-7"},"spec":{"accessModes":["ReadWriteOnce"],"capacity":{"storage":"20Gi"},"hostPath":{"path":"/data/7/","type":"DirectoryOrCreate"},"nodeAffinity":{"required":{"nodeSelectorTerms":[{"matchExpressions":[{"key":"kubernetes.io/hostname","operator":"In","values":["worker-a"]}]}]}},"storageClassName":"local-storage","volumeMode":"Filesystem"}}
+    pv.kubernetes.io/bound-by-controller: "yes"
+  creationTimestamp: "2024-06-27T06:40:17Z"
+  finalizers:
+  - kubernetes.io/pv-protection
+  labels:
+    type: local
+  name: pv-4
+  resourceVersion: "21810236"
+  uid: 2cf6e49e-aeda-4fde-859f-e5b151c1d97e
+spec:
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: 20Gi
+  hostPath:
+    path: /data/4/
+    type: DirectoryOrCreate
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: local-storage
+  volumeMode: Filesystem
+
+
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"PersistentVolume","metadata":{"annotations":{},"labels":{"type":"local"},"name":"pv-7"},"spec":{"accessModes":["ReadWriteOnce"],"capacity":{"storage":"20Gi"},"hostPath":{"path":"/data/7/","type":"DirectoryOrCreate"},"nodeAffinity":{"required":{"nodeSelectorTerms":[{"matchExpressions":[{"key":"kubernetes.io/hostname","operator":"In","values":["worker-a"]}]}]}},"storageClassName":"local-storage","volumeMode":"Filesystem"}}
+    pv.kubernetes.io/bound-by-controller: "yes"
+  creationTimestamp: "2024-06-27T06:40:17Z"
+  finalizers:
+  - kubernetes.io/pv-protection
+  labels:
+    type: local
+  name: pv-5
+  resourceVersion: "21810236"
+  uid: 2cf6e49e-aeda-4fde-859f-e5b151c1d97e
+spec:
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: 20Gi
+  hostPath:
+    path: /data/5/
+    type: DirectoryOrCreate
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: local-storage
+  volumeMode: Filesystem
+
+
 
