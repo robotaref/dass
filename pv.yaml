@@ -18,6 +18,9 @@ spec:
   - ReadWriteOnce
   capacity:
     storage: 20Gi
+  hostPath:
+    path: /data/0/
+    type: DirectoryOrCreate
   persistentVolumeReclaimPolicy: Retain
   storageClassName: local-storage
   volumeMode: Filesystem
@@ -44,6 +47,9 @@ spec:
   - ReadWriteOnce
   capacity:
     storage: 20Gi
+  hostPath:
+    path: /data/1/
+    type: DirectoryOrCreate
   persistentVolumeReclaimPolicy: Retain
   storageClassName: local-storage
   volumeMode: Filesystem
