@@ -42,6 +42,5 @@ vars:
 configurations:
 - params.yaml
 images:
-- name: docker.io/kubeflowmanifestswg/oidc-authservice
-  newName: docker.io/kubeflowmanifestswg/oidc-authservice
-  newTag: e236439
+- name: docker.io/kubeflowmanifestswg/oidc-authservice:28c59ef
+  newName: docker.io/kubeflowmanifestswg/oidc-authservice:28c59ef

@@ -18,7 +18,7 @@ spec:
       serviceAccountName: authservice
       containers:
       - name: authservice
-        image: docker.io/kubeflowmanifestswg/oidc-authservice
+        image: docker.io/kubeflowmanifestswg/oidc-authservice:28c59ef
         imagePullPolicy: IfNotPresent
         ports:
         - name: http-api
